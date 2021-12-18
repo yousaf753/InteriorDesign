@@ -1,0 +1,710 @@
+{
+  "bed": [
+    {
+      "name": "Rocking Bed",
+      "image": "assets/images/bed/bed1.png",
+      "price": "18000",
+      "description": "This type of bed is made of permanent magnetic material that uses opposing magnets to levitate the bed off the ground."
+    },
+    {
+      "name": "Sonic Bed",
+      "image": "assets/images/bed/bed2.png",
+      "price": "21000",
+      "description": "For all the music loveout there, the sonic bed has a built-in speaker system that can play music while you sleep. "
+    },
+    {
+      "name": "Upholstered Bed",
+      "image": "assets/images/bed/bed3.png",
+      "price": "64000",
+      "description": "The upholstery is laid on top of a layer of padding, making the headboards of this style of bed very soft and comfortable. "
+    },
+    {
+      "name": "Rustic Bed",
+      "image": "assets/images/bed/bed4.png",
+      "price": "80000",
+      "description": "A rustic bed captures the rough, aged, and natural look that many are after. This style of bed is very popular in cabins or older homes."
+    },
+    {
+      "name": "Country Bed",
+      "image": "assets/images/bed/bed5.png",
+      "price": "65000",
+      "description": "Similar to a rustic bed, a country-style bed has an outdoorsy and aged appeal to it. They are typically made out of wood and often feature panels at the foot and head."
+    },
+    {
+      "name": "Industrial Bed",
+      "image": "assets/images/bed/bed6.png",
+      "price": "76000",
+      "description": "Industrial beds are factory-inspired, meaning they have a wrought iron framework and a rustic feel to them."
+    },
+    {
+      "name": " Retro Bed",
+      "image": "assets/images/bed/bed7.png",
+      "price": "47000",
+      "description": "Retro beds include unique vintage and antique designs. They can be made to look old-fashioned or modern and work great in mid-century modern homes."
+    },
+    {
+      "name": "Mission Style Bed",
+      "image": "assets/images/bed/bed8.png",
+      "price": "50000",
+      "description": "Mission style beds are typically characterized by the use of natural wood to make a simple and elegant look."
+    },
+    {
+      "name": "Mid-Century Bed",
+      "image": "assets/images/bed/bed9.png",
+      "price": "38000",
+      "description": "Mid-century beds are sleek in design. They usually feature styles from the 1900s and are typically made out of wood — creating a vintage look."
+    },
+    {
+      "name": "French Bed",
+      "image": "assets/images/bed/bed10.png",
+      "price": "35000",
+      "description": "Woven (also called rattan or wicker) beds have a casual chic feel. What makes these beds so unique is the bed frame that is created by weaving wooden material."
+    },
+    {
+      "name": "Scandinavian Bed",
+      "image": "assets/images/bed/bed11.png",
+      "price": "22000",
+      "description": "These Nordic-inspired beds offer a simple, clean look that’s great for modern homes. The headboards of this style bed are usually clean and made of solid wood."
+    },
+    {
+      "name": "Bunk Bed",
+      "image": "assets/images/bed/bed12.png",
+      "price": "25000",
+      "description": "Bunk beds are a very popular style of bed for children who share rooms."
+    }
+  ],
+  "bedroom": [
+    {
+      "name": "Contemporary Bedroom Design",
+      "image": "assets/images/bedroom/bedset1.jpg",
+      "price": "150000",
+      "description": "Contemporary design right now includes styles from the end of the 20th century, where design veered a little from modern design and into a more natural and soft look"
+    },
+   {
+      "name": "Traditional Bedroom Design",
+      "image": "assets/images/bedroom/bedset2.jpg",
+      "price": "120000",
+      "description": "In a traditional bedroom (if it is planned all the way to the architecture) any built in casework or closets is placed in the center or have mirrored items on either side of the bedroom."
+    },
+    {
+      "name": "Industrial",
+      "image": "assets/images/bedroom/bedset3.jpg",
+      "price": "180000",
+      "description": "The industrial design is different from other styles due to it embracing the elements that other styles work so hard to cover up."
+    },
+     {
+      "name": "Cottage",
+      "image": "assets/images/bedroom/bedset4.jpg",
+      "price": "135000",
+      "description": "To create a soft, inviting cottage style bedroom there are a few key elements that need to be incorporated. Lucky enough, none of them are too difficult or expensive."
+    },
+    {
+      "name": "Romantic",
+      "image": "assets/images/bedroom/bedset5.jpg",
+      "price": "155000",
+      "description": "It is probably the make it or break it point for the end of a good date night, so make sure to include these key elements to get the right vibes."
+    },
+     {
+      "name": "Coastal",
+      "image": "assets/images/bedroom/bedset6.jpg",
+      "price": "100000",
+      "description": "Many dream of glorious coastal vacations, but less actually get to do it. Why not just design you bedroom in a coastal style to pretend like you get to go on a vacation every night? "
+    },
+   {
+      "name": "Nautical",
+      "image": "assets/images/bedroom/bedset7.jpg",
+      "price": "178000",
+      "description": "Similar to coastal design in the sea and water aesthetics there are a few differences between the two design styles."
+    },
+    {
+      "name": "Scandinavian",
+      "image": "assets/images/bedroom/bedset8.jpg",
+      "price": "198000",
+      "description": "Scandinavian design is the height of minimalism. With a focus on functionality as well as simplicity this design style says what it means and means what it says."
+    },
+ {
+      "name": "Mid-Century Modern",
+      "image": "assets/images/bedroom/bedset9.jpg",
+      "price": "170000",
+      "description": "Similar to Scandinavian in the functionality aspects and keeping things light and neutrals there are only a few differences between the two design styles"
+    },  {
+      "name": "Shabby Chic",
+      "image": "assets/images/bedroom/bedset10.jpeg",
+      "price": "123000",
+      "description": "With an air of relaxation and piecework shabby chic is a look that screams creativity and freedom. While this style seems thrown together on a whim, it has come key elements that make it what it is."
+    }, {
+      "name": "Bohemian",
+      "image": "assets/images/bedroom/bedset11.jpg",
+      "price": "145000",
+      "description": "Bohemian design greatly resembles shabby chic as described above with the incorporation of a few additional considerations."
+    }
+  ],
+  "bookshelf": [
+   {
+      "name": "Standard",
+      "image": "assets/images/bookshelfs/bookshelf1.jpg",
+      "price": "25000",
+      "description": "Standard design bookcases will be a large, single piece of furniture with an array of horizontal shelving, support walls, and a backing wall."
+    },
+   {
+      "name": "Modular",
+      "image": "assets/images/bookshelfs/bookshelf2.jpg",
+      "price": "35000",
+      "description": "Modular bookcases come in sets of 2, 3, or more. These are designed to interlock or rest against each other in arrays of your own choosing"
+    },
+    {
+      "name": " Leaning",
+      "image": "assets/images/bookshelfs/bookshelf3.jpg",
+      "price": "28000",
+      "description": "The leaning bookcase has a specialized design, dependent on balancing against a wall. "
+    },
+     {
+      "name": "Corner",
+      "image": "assets/images/bookshelfs/bookshelf4.jpg",
+      "price": "20000",
+      "description": "These are especially perfect for conserving space, or displaying art or delicate pieces in a place where they will not be disturbed."
+    },
+   {
+      "name": "Barrister",
+      "image": "assets/images/bookshelfs/bookshelf5.jpg",
+      "price": "45000",
+      "description": "The barrister bookcase design was originally crafted to assist lawyein the storage and mobility of their extensive law book collections."
+    },
+   {
+      "name": "Modern",
+      "image": "assets/images/bookshelfs/bookshelf6.jpg",
+      "price": "32000",
+      "description": "Modern style furniture harkens back to a specific period of mid-20th century style, focusing on often minimalistic yet eye catching shapes"
+    },
+    {
+      "name": "Contemporary",
+      "image": "assets/images/bookshelfs/bookshelf7.jpg",
+      "price": "24000",
+      "description": "Contemporary design is not limited to any specific look or philosophy; it merely needs to be fresh, novel, and of-the-moment."
+    },
+    {
+      "name": "Rustic",
+      "image": "assets/images/bookshelfs/bookshelf8.jpg",
+      "price": "43000",
+      "description": "The rustic look aims for a pastoral, cottage-like appearance, with typically natural wood, broad, simple shapes, and an untreated, unfussy look."
+    },
+  {
+      "name": "Coastal",
+      "image": "assets/images/bookshelfs/bookshelf9.jpg",
+      "price": "23000",
+      "description": "Bookcases in the coastal design paradigm feature a natural look that diffefrom rustic style in that it’s aimed for an oceanic, beachside style."
+    }, {
+      "name": "Industrial",
+      "image": "assets/images/bookshelfs/bookshelf10.jpg",
+      "price": "50000",
+      "description": "Intended to mimic the look and feel of factory equipment, industrial style furniture often features bold, strong metallic construction and shopworn wood. "
+    }
+  ],
+  "chair": [
+   {
+      "name": "Armchair",
+      "image": "assets/images/chairs/chair1.png",
+      "price": "15000",
+      "description": "Evan Davis once said, A chair’s function is not just to provide a place to sit; it is to provide a medium for self-expression."
+    },
+    {
+      "name": "Recliner",
+      "image": "assets/images/chairs/chair2.png",
+      "price": "23000",
+      "description": "Reclineare the epitome of comfort in a home. These chair types can come in leather or cloth upholstery."
+    },
+    {
+      "name": "Contemporary Round Chair",
+      "image": "assets/images/chairs/chair3.png",
+      "price": "10200",
+      "description": "Feeling boxed in by traditional chair choices? If so, the contemporary round chair might be a perfect chair type for you."
+    },
+   {
+      "name": "Loveseat",
+      "image": "assets/images/chairs/chair4.png",
+      "price": "19000",
+      "description": "Many chaiare only designed to accommodate one person at a time. However, loveseats up the cuddle factor by allowing just enough room for two people to sit together."
+    },
+ {
+      "name": "Accent Chairs",
+      "image": "assets/images/chairs/chair5.png",
+      "price": "23000",
+      "description": "Accent chair is an umbrella term for a variety of living room chairs, including the club chair, wingback chair, English rolled arm chair, Bergère chair, barrel chair, and Lawson chair."
+    },
+ {
+      "name": "Club Chair",
+      "image": "assets/images/chairs/chair6.png",
+      "price": "11000",
+      "description": "American singer Tiny Tim once said, “If the club was empty, I sang to the chairs.” This quippy quote can help you picture what makes a club chair unique."
+    },
+     {
+      "name": "Wingback Chair",
+      "image": "assets/images/chairs/chair7.png",
+      "price": "12000",
+      "description": "This kind of living room chair is characterized by the high sides that surround the sitter, or the “wings” of the chair."
+    },
+     {
+      "name": "Bergère Chair",
+      "image": "assets/images/chairs/chair8.png",
+      "price": "18000",
+      "description": "For fans of traditional French style, there’s hardly a better accent piece than the bergère chair."
+    },
+     {
+      "name": "Lawson Chair",
+      "image": "assets/images/chairs/chair9.png",
+      "price": "12300",
+      "description": "A Lawson chair is a chair style that lies somewhere between traditional chair design and mid-century modern design."
+    }, {
+      "name": "Barrel Chair",
+      "image": "assets/images/chairs/chair10.png",
+      "price": "17600",
+      "description": "Another living room chair option is the barrel chair. A barrel chair resembles the top of part of its name, a barrel, and there is evidence that early barrel chaiwere in fact made using actual barrels."
+    },
+    {
+      "name": "English Rolled Arm Chair",
+      "image": "assets/images/chairs/chair11.png",
+      "price": "19000",
+      "description": "A very traditional design, the English rolled arm chair just oozes coziness with its soft, deep cushioning and rounded edges."
+    },
+     {
+      "name": "Slipper Chair",
+      "image": "assets/images/chairs/chair12.png",
+      "price": "13000",
+      "description": "The slipper chair is an armless accent chair with a seat that is low to the ground."
+    }
+  ],
+  "diningroom": [
+   {
+      "name": "Enclosed",
+      "image": "assets/images/diningroom/diningroom1.jpg",
+      "price": "200000",
+      "description": "Spacious and glamorous formal dining room in an enclosed space."
+    },
+    {
+      "name": "Open Concept",
+      "image": "assets/images/diningroom/diningroom2.jpg",
+      "price": "300000",
+      "description": "Dining area in open concept rustic kitchen."
+    },
+     {
+      "name": "Traditional Family",
+      "image": "assets/images/diningroom/diningroom3.jpg",
+      "price": "250000",
+      "description": "Unlike the formal look, the traditional family style creates a more intimate setting with features such as a smaller table."
+    },
+   {
+      "name": "Farmhouse",
+      "image": "assets/images/diningroom/diningroom4.jpg",
+      "price": "350000",
+      "description": "The farmhouse style has a less formal atmosphere about it. Unlike the traditional family, it often functions strictly as some place to eat rather than for other uses."
+    },
+  {
+      "name": "Cottage",
+      "image": "assets/images/diningroom/diningroom5.jpg",
+      "price": "400000",
+      "description": "The cottage style conveys a sense of hominess. It is inviting with softer coloand lines. "
+    },
+     {
+      "name": "Beach",
+      "image": "assets/images/diningroom/diningroom6.jpg",
+      "price": "350000",
+      "description": "The beach or coastal style creates an atmosphere of lightheartedness and openness that brings a feeling of the sea to the dining room table. "
+    },
+    {
+      "name": "Global",
+      "image": "assets/images/diningroom/diningroom7.jpeg",
+      "price": "140000",
+      "description": "The global dining room style combines elements of several other ones to achieve its unique look."
+    },
+   {
+      "name": "Eclectic",
+      "image": "assets/images/diningroom/diningroom8.jpeg",
+      "price": "300000",
+      "description": "The eclectic look is one of the less formal of the types of dining room styles. It sets its own rules with design elements and features that reflect your personality and interests"
+    },
+   {
+      "name": "Contemporary",
+      "image": "assets/images/diningroom/diningroom9.jpg",
+      "price": "250000",
+      "description": "The contemporary dining room style is about the prevailing style that incorporates features that reflect updated ideas"
+    },{
+      "name": "Nightlife",
+      "image": "assets/images/diningroom/diningroom10.jpeg",
+      "price": "200000",
+      "description": "The main theme of the nightlife-style is that its purpose is to recreate the feeling of dining out at home."
+    }
+  ],
+  "diningset": [
+   {
+      "name": "Enclosed",
+      "image": "assets/images/diningset/diningset1.png",
+      "price": "150000",
+      "description": "Spacious and glamorous formal dining room in an enclosed space."
+    },
+   {
+      "name": "Open Concept",
+      "image": "assets/images/diningset/diningset2.png",
+      "price": "130000",
+      "description": "Dining area in open concept rustic kitchen."
+    },
+     {
+      "name": "Traditional Family",
+      "image": "assets/images/diningset/diningset3.png",
+      "price": "150000",
+      "description": "Unlike the formal look, the traditional family style creates a more intimate setting with features such as a smaller table."
+    },
+    {
+      "name": "Farmhouse",
+      "image": "assets/images/diningset/diningset4.png",
+      "price": "110000",
+      "description": "The farmhouse style has a less formal atmosphere about it. Unlike the traditional family, it often functions strictly as some place to eat rather than for other uses."
+    },
+     {
+      "name": "Cottage",
+      "image": "assets/images/diningset/diningset5.png",
+      "price": "120000",
+      "description": "The cottage style conveys a sense of hominess. It is inviting with softer coloand lines. "
+    },
+    {
+      "name": "Beach",
+      "image": "assets/images/diningset/diningset6.png",
+      "price": "150000",
+      "description": "The beach or coastal style creates an atmosphere of lightheartedness and openness that brings a feeling of the sea to the dining room table. "
+    },
+   {
+      "name": "Global",
+      "image": "assets/images/diningset/diningset7.png",
+      "price": "140000",
+      "description": "The global dining room style combines elements of several other ones to achieve its unique look."
+    },
+ {
+      "name": "Eclectic",
+      "image": "assets/images/diningset/diningset8.png",
+      "price": "130000",
+      "description": "The eclectic look is one of the less formal of the types of dining room styles. It sets its own rules with design elements and features that reflect your personality and interests"
+    },
+     {
+      "name": "Contemporary",
+      "image": "assets/images/diningset/diningset9.png",
+      "price": "150000",
+      "description": "The contemporary dining room style is about the prevailing style that incorporates features that reflect updated ideas"
+    },  {
+      "name": "Nightlife",
+      "image": "assets/images/diningset/diningset10.png",
+      "price": "100000",
+      "description": "The main theme of the nightlife-style is that its purpose is to recreate the feeling of dining out at home."
+    }
+  ],
+  "livingroom": [
+    {
+      "name": "Traditional",
+      "image": "assets/images/livingroom/livingroom1.jpg",
+      "price": "300000",
+      "description": "Traditional design is a style that is steeped in elegance and sophistication. The look in traditional rooms is built on concepts from back in the 18th and 19th centuries."
+    },
+     {
+      "name": "Contemporary",
+      "image": "assets/images/livingroom/livingroom2.jpg",
+      "price": "400000",
+      "description": "Contemporary designs are often mistaken with modern designs. Contemporary is not what you think it is as being modern or such."
+    },
+    {
+      "name": "West Coast Contemporary",
+      "image": "assets/images/livingroom/livingroom3.jpg",
+      "price": "350000",
+      "description": "West Coast Contemporary is a mixture of several designs like classic and modern. They often mirror classic cabin designs with a twist of modern design. "
+    },
+   {
+      "name": "Modern",
+      "image": "assets/images/livingroom/livingroom4.jpg",
+      "price": "500000",
+      "description": "Oftentimes, modern design is mistaken to be the same as contemporary design, which is actually not. Modern design was created in the 19th century and was made known for its simple yet profound design."
+    },
+    {
+      "name": "Mid-Century",
+      "image": "assets/images/livingroom/livingroom5.jpg",
+      "price": "330000",
+      "description": "Mid-Century Modern style is recognized through simple clean lines of the furnishings and the geometric design of fabrics and decor items."
+    },
+    {
+      "name": "Cottage Living",
+      "image": "assets/images/livingroom/livingroom6.jpg",
+      "price": "350000",
+      "description": "Cottage style is more of an attitude than a design with specific rules. Cottage style is relaxed and centered around being casual and lighthearted."
+    },
+   {
+      "name": "Cabin",
+      "image": "assets/images/livingroom/livingroom7.jpg",
+      "price": "450000",
+      "description": "This cabin house design is often called the mountain house design, which is commonly composed of wood and stones."
+    },
+   {
+      "name": "Chalet",
+      "image": "assets/images/livingroom/livingroom8.jpg",
+      "price": "350000",
+      "description": "Chalet is commonly designed to reflect an alpine lifestyle, which is aesthetically designed either in traditional or modern motif. "
+    },
+  {
+      "name": "Mediterranean",
+      "image": "assets/images/livingroom/livingroom9.jpg",
+      "price": "500000",
+      "description": "Mediterranean style is a light, breezy style that is tuned into the beach and oceanside living. This design should have a sun soaked feel with an air of cool breeze."
+    },  {
+      "name": "Asian",
+      "image": "assets/images/livingroom/livingroom10.jpg",
+      "price": "450000",
+      "description": "Asian design is perfect if you are going for an eastern feel, or if you appreciate balance, tranquility, and order."
+    },
+   {
+      "name": "Country",
+      "image": "assets/images/livingroom/livingroom11.jpeg",
+      "price": "350000",
+      "description": "It is a classic design that uses simple lines and welcoming color palettes along with vintage style and a relaxed atmosphere to build a cozy feel."
+    }
+  ],
+  "sofa": [
+  {
+      "name": "The Chesterfield",
+      "image": "assets/images/sofas/sofa1.png",
+      "price": "35000",
+      "description": "The Chesterfield became so trendy that “chesterfield” is synonymous with “couch.” Philip Stanhope, 4th Earl of Chesterfield in England, commissioned this classic leather sofa over 200 yeaold."
+    },
+    {
+      "name": "The Loveseat Sofa",
+      "image": "assets/images/sofas/sofa2.png",
+      "price": "30000",
+      "description": "A loveseat is a medium size, upholstered sofa that seats two adults. Furniture makein the 1800s designed these sofas for ladies with large skirts. They were oveized chai, not seats for love."
+    },
+     {
+      "name": "The Sleeper Sofa",
+      "image": "assets/images/sofas/sofa3.png",
+      "price": "25000",
+      "description": "Sleeper sofas are one of the most veatile pieces of furniture. Other names include couch bed, sofa bed, hide-a-bed, or sleeper-sofa."
+    },
+   {
+      "name": "The Sectional Sofa",
+      "image": "assets/images/sofas/sofa4.png",
+      "price": "30000",
+      "description": "You can buy this seating unit in several sections and arrange them to configure to your needs, such as an L-shape (like the above) or a U-shape."
+    },
+    {
+      "name": "The Daybed",
+      "image": "assets/images/sofas/sofa5.png",
+      "price": "39000",
+      "description": "Like the loveseat, the daybed comfortably seats one or two people. The daybed converts readily into a sleeping unit. "
+    },
+    {
+      "name": "The Reclining Sofa",
+      "image": "assets/images/sofas/sofa6.png",
+      "price": "35800",
+      "description": "One very modern trend is the recliner. Originally, people bought reclining chai, but manufacturesaw a need for reclining units in sofas and loveseats."
+    },
+    {
+      "name": "The Divan",
+      "image": "assets/images/sofas/sofa7.png",
+      "price": "19500",
+      "description": "Similar to a bench, the divan has no back or sides, although you may find variations that have arms. Most people place the unit against a wall and arrange pillows for people to lean back on. "
+    },
+     {
+      "name": "The Settee",
+      "image": "assets/images/sofas/sofa8.png",
+      "price": "38000",
+      "description": "Originally, settees were long wooden benches with backs. Over the decades, people improved them with upholstered seats and backs. Today, the term “settee” is almost synonymous with “sofa.”"
+    },
+    {
+      "name": "Lawson-style sofas",
+      "image": "assets/images/sofas/sofa9.png",
+      "price": "45000",
+      "description": "If you appreciate the history associated with the Lawson style sofa, mention financier Thomas Lawson to friends before they take a seat on today’s veion of this fuss-free furnishing."
+    }, {
+      "name": "Cabriole sofas",
+      "image": "assets/images/sofas/sofa10.png",
+      "price": "50000",
+      "description": "If Lawson sofas are the chameleons of the couch niche, Cabriole-style furnishings are on the other end of the continuum."
+    }
+  ],
+  "table": [
+   {
+      "name": "Home Office Table",
+      "image": "assets/images/tables/table1.png",
+      "price": "20000",
+      "description": "Many of us have the option of working from home, or if you are starting a new establishment, then you need an office space for youelf at your home."
+    },
+     {
+      "name": "Bedroom Office Table",
+      "image": "assets/images/tables/table2.png",
+      "price": "25000",
+      "description": " It is a simple and rustic long, rectangular table that doesn’t have a width similar to other broad tables, thereby doesn’t occupy much space."
+    },
+   {
+      "name": "Designer Office Table",
+      "image": "assets/images/tables/table3.png",
+      "price": "30000",
+      "description": "As the name suggests, designer tables are individually made in order and cannot be found randomly. It is a dar wood low height table with clean and sharp edges."
+    },
+    {
+      "name": "Oval Office Table",
+      "image": "assets/images/tables/table4.png",
+      "price": "53000",
+      "description": "The oval-shaped office table has light mahogany finish with a lot of spaces provided for storage. This table is massive and has an intricate design carved on the edges of the table."
+    },
+  {
+      "name": "MDF Office Table",
+      "image": "assets/images/tables/table5.png",
+      "price": "29000",
+      "description": "There are many materials used in manufacturing office tables; one of the prominent and trendy materials is Medium-Density Fiberboard material in short MDF."
+    },
+   {
+      "name": "PVC Office Table",
+      "image": "assets/images/tables/table6.png",
+      "price": "34000",
+      "description": " These types of tables are durable, lightweight, and can be moved very quickly; therefore, best-suited fo the reception area. It is a simplistic design with a block, supported by a slab of what PVC surface giving it a glossy look."
+    },
+  {
+      "name": "Godrej Office Table",
+      "image": "assets/images/tables/table7.png",
+      "price": "45000",
+      "description": "This is an executive table by Godrej that fits in perfectly in an executive’s office space. The table is made out of pure wood with a unique design and has a polished finish."
+    },
+     {
+      "name": "Nilkamal Office Table",
+      "image": "assets/images/tables/table8.png",
+      "price": "36000",
+      "description": "This is a simple office table that works perfectly as a laptop table. It is made out of solid black wood with a sleek finish. "
+    },
+    {
+      "name": "Damro Office Table",
+      "image": "assets/images/tables/table9.png",
+      "price": "45000",
+      "description": "This is a table design apt for an executive or CEO office. It is an L-shaped design providing ample space for storage and leg area too."
+    }, {
+      "name": "Stylish Office Table Design",
+      "image": "assets/images/tables/table10.png",
+      "price": "30000",
+      "description": "This is an elegant table with a simple finish best suited for the cabin of the boss. The choice of colouof this table makes the room look stylish and has clean lines giving it an executive finish too."
+    },
+    {
+      "name": "Executive Office Table Design",
+      "image": "assets/images/tables/table11.png",
+      "price": "43000",
+      "description": "This is a classic example of an executive office table, especially for the cabin of a Boss. The finish of this wooden table is shiny."
+    }
+  ],
+  "wardrobes": [
+   {
+      "name": "Contemporary",
+      "image": "assets/images/wardrobes/wardrobe1.jpg",
+      "price": "50000",
+      "description": "Designed with the best outlook combining the old and modern look, this set of wooden wardrobes for bedroom is much popular for giving the bedrooms a sophisticated appearance. "
+    },
+     {
+      "name": "Portable Closet",
+      "image": "assets/images/wardrobes/wardrobe2.jpg",
+      "price": "40000",
+      "description": "With a number of draweand flexible DIY, this bedroom with wardrobe is mostly selected for the kid’s bedroom."
+    },
+    {
+      "name": "Bedroom Wardrobe",
+      "image": "assets/images/wardrobes/wardrobe3.jpg",
+      "price": "60000",
+      "description": "With a mirror on the front side, this is among the tall bedroom wardrobes that are specially designed for single people bedrooms."
+    },
+     {
+      "name": " Sliding Wardrobe",
+      "image": "assets/images/wardrobes/wardrobe4.jpg",
+      "price": "80000",
+      "description": "With a large space, the bedroom wardrobe sliding doodesign is the best for big rooms."
+    },
+    {
+      "name": " Hinge Door",
+      "image": "assets/images/wardrobes/wardrobe5.jpg",
+      "price": "70000",
+      "description": "With various internal fittings and configurations, the bedroom wardrobe with draweis made with standard quality material along with German hardware."
+    },
+   {
+      "name": "Door L-Shaped",
+      "image": "assets/images/wardrobes/wardrobe6.jpg",
+      "price": "90000",
+      "description": "The space the closet comes with is perfect for storing handy things keeping in mind the safety norms regarding the kids."
+    },
+   {
+      "name": "Multipurpose",
+      "image": "assets/images/wardrobes/wardrobe7.jpg",
+      "price": "100000",
+      "description": " This bedroom wall wardrobe cannot only store clothes but other necessary assets too on the side open shelves."
+    },
+    {
+      "name": " Wardrobe With Dresser",
+      "image": "assets/images/wardrobes/wardrobe8.jpg",
+      "price": "50000",
+      "description": " The bedroom wardrobe black design adds to extra space required in the form of a dressing table. It is a perfect match for black bedroom wardrobe furniture set."
+    },
+    {
+      "name": " Classic Mirror",
+      "image": "assets/images/wardrobes/wardrobe9.jpg",
+      "price": "90000",
+      "description": "With a fashionable look, this wooden wardrobe for bedroom is given old look with limited shelves, best for a single peon. "
+    },  {
+      "name": "Designer Bedroom Wardrobe",
+      "image": "assets/images/wardrobes/wardrobe10.JPG",
+      "price": "40000",
+      "description": "The white bedroom wardrobe adds a designer look to the room in a simplified way with black designs on it."
+    }
+  ],
+  "light": [
+    {
+      "name": "Recessed fixtures",
+      "image": "assets/images/light/light1.jpg",
+      "price": "10000",
+      "description": "Recessed fixtures are any indoor lights fully contained inside your walls, ceiling, or floo."
+    },
+    {
+      "name": "Track lighting",
+      "image": "assets/images/light/light2.jpg",
+      "price": "15000",
+      "description": "Your home’s pre-installed fixtures aren’t the only way you can direct light from your ceiling toward your floo."
+    },
+    {
+      "name": "Pendants",
+      "image": "assets/images/light/light3.jpg",
+      "price": "6000",
+      "description": "Pendants come in a wide range of coloand styles that seamlessly blend into any home decor."
+    },
+    {
+      "name": "Wall sconces",
+      "image": "assets/images/light/light4.jpg",
+      "price": "18000",
+      "description": "Wall sconces extend from your wall to illuminate your hallways and side tables, so you might think that using them requires an electrician installing wiring behind your walls."
+    },
+    {
+      "name": " Ceiling lighting ",
+      "image": "assets/images/light/light5.jpg",
+      "price": "20000",
+      "description": "Speaking of permanent, if you need a consistent, reliable foundation for your indoor lighting design, install ceiling fixtures. "
+    },
+    {
+      "name": "Ambient lighting ",
+      "image": "assets/images/light/light6.jpg",
+      "price": "9000",
+      "description": "If you use fixtures on (or in!) your ceiling to build your well-lit foundation as we just described, then you’re using what’s called ambient lighting."
+    },
+    {
+      "name": "Task lighting",
+      "image": "assets/images/light/light7.jpg",
+      "price": "10000",
+      "description": "Task lamps and other similar fixtures are what you install or set up to use for specific activities"
+    },
+    {
+      "name": " Accent lighting",
+      "image": "assets/images/light/light8.jpg",
+      "price": "15000",
+      "description": " You’re looking for accent lighting. Install a fixture directly above a dazzling loveseat or right under a stunning portrait to properly illuminate it and draw attention to it. With accent lighting"
+    },
+    {
+      "name": " LED",
+      "image": "assets/images/light/light9.jpg",
+      "price": "25000",
+      "description": "This type of indoor lighting is best known as an energy-efficient alternative to the light bulbs that dominated the 20th century."
+    }
+  ]
+}
