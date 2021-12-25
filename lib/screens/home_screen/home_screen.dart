@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
@@ -10,6 +11,8 @@ import 'package:interior_design/controller/order_controller.dart';
 import 'package:interior_design/controller/user_controller.dart';
 import 'package:interior_design/json_request/json_get_request.dart';
 import 'package:interior_design/model/products_model.dart';
+import 'package:interior_design/screens/firebase/sign_account.dart';
+import 'package:interior_design/screens/home_screen/about_us.dart';
 import 'package:interior_design/screens/product_screen/bed_screen.dart';
 import 'package:interior_design/screens/product_screen/bookshelf_screen.dart';
 import 'package:interior_design/screens/product_screen/diningset_screen.dart';
@@ -23,17 +26,19 @@ import 'package:interior_design/widget/custom_image.dart';
 import 'package:interior_design/widget/custom_text.dart';
 import 'package:interior_design/widget/products_container.dart';
 import 'package:lottie/lottie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-import 'best_interior_design/bedroom.dart';
-import 'best_interior_design/diningroom.dart';
-import 'best_interior_design/livingroom.dart';
-import 'cart_screen.dart';
-import 'object/object_screen.dart';
-import 'order_screen.dart';
-import 'product_screen/chair_screen.dart';
+import '../best_interior_design/bedroom.dart';
+import '../best_interior_design/diningroom.dart';
+import '../best_interior_design/livingroom.dart';
+import '../cart_screen/cart_screen.dart';
+import '../object/object_screen.dart';
+import '../ordor_screen/order_screen.dart';
+import '../product_screen/chair_screen.dart';
+import 'mu_account.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  HomePage({Key? key,}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -44,9 +49,12 @@ class _HomePageState extends State<HomePage> {
   ProductsModel productsModel = ProductsModel();
   CartController cartController=Get.put(CartController());
   OrderController orderController=Get.put(OrderController());
+  final UserController _userController=Get.put(UserController());
   @override
   void initState() {
     // TODO: implement initState
+    _userController.getPreferences();
+    _userController.getShared();
     getProducts().then((value) {
       setState(() {
         productsModel = value;
@@ -105,28 +113,81 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         ClipRRect(
                             borderRadius: BorderRadius.circular(300.0),
-                            child: Image.network(userController.image)),
+                            child:
+                            Image.network(_userController.image)),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            customText(userController.name, 20,
+                            customText(_userController.name, 20,
                                 AppColors.text2Color, FontWeight.normal),
-                            customText(userController.email, 10,
-                                AppColors.text1Color, FontWeight.normal),
+                            const SizedBox(height: 10,),
+                            InkWell(
+                              onTap: () async {
+                                SharedPreferences preferences=await SharedPreferences.getInstance();
+                                preferences.setBool("SignIn", false);
+                                Get.snackbar(
+                                    "You are Sign Out", "For Shopping Sign In First");
+                              },
+                              child: Container(
+                                height: 30,
+                                width: 150,
+                                decoration: const BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(20.0),
+                                        topRight: Radius.circular(2.0),
+                                        bottomLeft: Radius.circular(2.0),
+                                        bottomRight: Radius.circular(20.0))),
+                                child: Center(
+                                    child: customText("Sign Out", 20,
+                                        AppColors.text1Color, FontWeight.normal)),
+                              ),
+                            ),
                           ],
                         ),
                       ],
                     )),
                 InkWell(
                   onTap: () {
-                    if (orderController.itemCount >= 1) {
-                      Get.to(OrderScreen(
-                        height: height,
-                        width: width,
-                      ));
-                    } else {
+                    Get.to(()=> MyAccount());
+                  },
+                  child: Container(
+                    height: 30,
+                    width: 150,
+                    decoration: const BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(2.0),
+                            bottomLeft: Radius.circular(2.0),
+                            bottomRight: Radius.circular(20.0))),
+                    child: Center(
+                        child: customText("My Account", 20,
+                            AppColors.text1Color, FontWeight.normal)),
+                  ),
+                ),
+                const SizedBox(height: 10,),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      _userController.getPreferences();
+                      _userController.getShared();
+                    });
+                    if(_userController.signIn==true){
+                      if (orderController.itemCount >= 1 ) {
+                        Get.to(OrderScreen(
+                          height: height,
+                          width: width,
+                        ));
+                      } else {
+                        Get.snackbar(
+                            "Confirm an Order First", "Than check order");
+                      }
+                    }
+                    else{
                       Get.snackbar(
-                          "Confirm an Order First", "Than check order");
+                          "Sign In First", "Than continue shopping");
+                      Get.to(()=>const SignInAccount());
                     }
                   },
                   child: Container(
@@ -143,7 +204,34 @@ class _HomePageState extends State<HomePage> {
                         child: customText("My Order's", 20,
                             AppColors.text1Color, FontWeight.normal)),
                   ),
-                )
+                ),
+                const SizedBox(height: 10,),
+                InkWell(
+                  onTap: () {
+                           Get.to(()=>const AboutUs());
+                  },
+                  child: Container(
+                    height: 30,
+                    width: 150,
+                    decoration: BoxDecoration(
+                        color: AppColors.text3Color,
+                        borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(2.0),
+                            bottomLeft: Radius.circular(2.0),
+                            bottomRight: Radius.circular(20.0))),
+                    child: Center(
+                        child: customText("About Us", 20,
+                            AppColors.primaryColor, FontWeight.normal)),
+                  ),
+                ),
+               Padding(padding: const EdgeInsets.all(50),
+               child: Column(
+                 children: [
+                   customText("For Any help Contact on", 10, AppColors.text1Color, FontWeight.bold),
+                   customText("03001234567", 30, AppColors.text2Color, FontWeight.bold)
+                 ],
+               ),)
               ],
             ),
           ),

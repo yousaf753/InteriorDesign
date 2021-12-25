@@ -16,7 +16,6 @@ class _ObjectDetailState extends State<ObjectDetail> {
       body: SafeArea(
         child: ModelViewer(
           src: ObjectList.objectList[widget.index],
-          alt: "A 3D model of an table soccer",
           autoPlay: true,
           autoRotate: true,
           cameraControls: true,

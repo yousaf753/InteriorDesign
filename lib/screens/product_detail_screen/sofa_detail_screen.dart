@@ -12,7 +12,7 @@ import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:interior_design/constant/icons_path.dart';
 import 'package:interior_design/controller/cart_controller.dart';
-import 'package:interior_design/screens/cart_screen.dart';
+import 'package:interior_design/screens/cart_screen/cart_screen.dart';
 import 'package:interior_design/widget/custom_icon.dart';
 class SofaDetailScreen extends StatefulWidget {
   final double height, width;
@@ -104,7 +104,10 @@ class _SofaDetailScreenState extends State<SofaDetailScreen> {
                       child: customIcon(IconPath.add, 50, 50),
                     ),
                   ),
-                  const SizedBox(width: 30,),
+                  SizedBox(
+                    width: 50,
+                    child: customText("  Quantity", 10, AppColors.text3Color, FontWeight.bold),
+                  ),
                   InkWell(
                     onTap: (){
                       setState(() {

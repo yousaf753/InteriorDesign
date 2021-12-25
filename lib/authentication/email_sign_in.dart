@@ -1,10 +1,11 @@
-import 'package:firebase_auth/firebase_auth.dart';
-
-void signInWithEmailAndPassword(String email, String password) async {
-  final FirebaseAuth _auth = FirebaseAuth.instance;
-  final User? user = (await _auth.signInWithEmailAndPassword(
-    email: email,
-    password: password,
-  ))
-      .user;
+import 'package:email_auth/email_auth.dart' ;
+EmailAuth emailAuth=EmailAuth(sessionName: 'Email');
+Future<bool> sendOtp(String email) async {
+  bool result = await emailAuth.sendOtp(
+      recipientMail: email, otpLength: 5);
+  return result;
+}
+bool otpVerify(String email,String otp) {
+ bool result=emailAuth.validateOtp(recipientMail: email, userOtp: otp);
+ return result;
 }

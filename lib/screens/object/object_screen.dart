@@ -38,25 +38,25 @@ class _ObjectsScreenState extends State<ObjectsScreen> {
                       ),
                       height: widget.height * 0.3,
                       width: widget.width,
-                      child: Row(
+                      child: Stack(
                         children: [
-                          Expanded(
-                            flex: 3,
-                            child: ModelViewer(
-                              src: ObjectList.objectList[index],
-                              alt: "A 3D model of an table soccer",
-                              autoPlay: true,
-                              autoRotate: true,
-                              cameraControls: true,
-                            ),),
-                          Expanded(
-                              flex: 1,
-                              child: InkWell(
-                                onTap: () {
-                                  Get.to(ObjectDetail(index: index));
-                                },
-                                child: Lottie.asset(AnimationPath.next),
-                              ))
+                          ModelViewer(
+                            src: ObjectList.objectList[index],
+                            autoPlay: true,
+                            autoRotate: true,
+                            cameraControls: true,
+                          ),
+                          SizedBox(
+                            height: 50,
+                            width: 100,
+                            child: InkWell(
+                              onTap: () {
+                                Get.to(ObjectDetail(index: index));
+                              },
+                              child: Lottie.asset(AnimationPath.next),
+                            ),
+                          ),
+
                         ],
                       ),
                     );

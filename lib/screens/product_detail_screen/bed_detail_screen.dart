@@ -8,7 +8,7 @@ import 'package:interior_design/constant/colors.dart';
 import 'package:interior_design/constant/icons_path.dart';
 import 'package:interior_design/controller/cart_controller.dart';
 import 'package:interior_design/model/products_model.dart';
-import 'package:interior_design/screens/cart_screen.dart';
+import 'package:interior_design/screens/cart_screen/cart_screen.dart';
 import 'package:interior_design/widget/custom_icon.dart';
 import 'package:interior_design/widget/custom_image.dart';
 import 'package:interior_design/widget/custom_text.dart';
@@ -103,7 +103,10 @@ class _BedDetailScreenState extends State<BedDetailScreen> {
                     child: customIcon(IconPath.add, 50, 50),
                   ),
                 ),
-                const SizedBox(width: 30,),
+                  SizedBox(
+                    width: 50,
+                    child: customText("  Quantity", 10, AppColors.text3Color, FontWeight.bold),
+                  ),
                 InkWell(
                   onTap: (){
                     setState(() {
