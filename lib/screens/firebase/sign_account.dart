@@ -29,7 +29,7 @@ class _SignInAccountState extends State<SignInAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor:AppColors.primaryColor,
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -41,31 +41,52 @@ class _SignInAccountState extends State<SignInAccount> {
               children: <Widget>[
                 const SizedBox(height: 50,),
                 SizedBox(
-                  height: 150,
+                  height: 200,
                   child: Lottie.asset(AnimationPath.animation1),
                 ),
-                TextFormField(
-                  controller: _userNameController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(labelText: 'User Name'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter  UserName';
-                    }
-                    return null;
-                  },
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _userNameController,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(labelText: 'User Name'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter  UserName';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
-                TextFormField(
-                  controller: _passwordController,
-                  obscureText: true,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(labelText: 'Create Password'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter address';
-                    }
-                    return null;
-                  },
+                const SizedBox(height: 10,),
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _passwordController,
+                      obscureText: true,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(labelText: 'Create Password'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter address';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 InkWell(

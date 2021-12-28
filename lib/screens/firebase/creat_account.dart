@@ -30,7 +30,7 @@ class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: AppColors.primaryColor,
       body: SingleChildScrollView(
         child: Form(
           key: _formKey,
@@ -45,60 +45,114 @@ class _CreateAccountState extends State<CreateAccount> {
                   height: 150,
                   child: Lottie.asset(AnimationPath.animation2),
                 ),
-                TextFormField(
-                  controller: _nameController,
-                  decoration: const InputDecoration(labelText:
-                  'Name'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter  Name';
-                    }
-                    return null;
-                  },
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _nameController,
+                      decoration: const InputDecoration(labelText: 'Name',),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter  Name';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
-                TextFormField(
-                  controller: _emailController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(labelText: 'Email'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter  mail';
-                    }
-                    return null;
-                  },
+                const SizedBox(height: 10,),
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _emailController,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(labelText: 'Email'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter  mail';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
-                TextFormField(
-                  controller: _numberController,
-                  keyboardType: TextInputType.number,
-                  decoration: const InputDecoration(labelText: 'Number'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter  Number';
-                    }
-                    return null;
-                  },
+                const SizedBox(height: 10,),
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _numberController,
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(labelText: 'Number'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter  Number';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
-                TextFormField(
-                  controller: _addressController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(labelText: 'Address'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter address';
-                    }
-                    return null;
-                  },
+                const SizedBox(height: 10,),
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _addressController,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(labelText: 'Address'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter address';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
-                TextFormField(
-                  controller: _passwordController,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: const InputDecoration(labelText: 'Create Password'),
-                  validator: (value) {
-                    if (value!.isEmpty) {
-                      return 'Please enter address';
-                    }
-                    return null;
-                  },
+                const SizedBox(height: 10,),
+                Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextFormField(
+                      controller: _passwordController,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(labelText: 'Create Password'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Please enter address';
+                        }
+                        return null;
+                      },
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 10,),
                 InkWell(
@@ -113,8 +167,7 @@ class _CreateAccountState extends State<CreateAccount> {
                     }
                   },
                   child: Container(
-                    height: 30,
-                    width: 300,
+                    height: 40,
                     decoration: BoxDecoration(
                         color: AppColors.text1Color,
                         borderRadius:  BorderRadius.circular(30)),
@@ -122,48 +175,50 @@ class _CreateAccountState extends State<CreateAccount> {
                         child: customText("Verify Email", 20, AppColors.primaryColor, FontWeight.normal)),
                   ),
                 ),
-                SizedBox(
-                  height: 50,
-                  width: 300,
-                  child: TextField(
-                    controller: _otpController,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                      hintText: "Enter OTP",
-                      suffixIcon: TextButton(
-                          onPressed: () {
-                            if(_formKey.currentState!.validate()){
-                              _userController.adduser(_nameController.text, _emailController.text, _numberController.text, _addressController.text,_passwordController.text);
-                            }
-                            if(otpVerify(_emailController.text,_otpController.text)){
-                              _userController.otp=true;
-                              Get.snackbar(
-                                  "Your Email verified", "Successfully");
-                            }
-                            else{
-                              Get.snackbar(
-                                  "Wrong OTP", "Enter Correct OTP");
-                            }
-                          },
-                          child:
-                          Container(
-                            height: 25,
-                            width: 150,
-                            decoration: BoxDecoration(
-                                color: AppColors.text2Color,
-                                borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(20.0),
-                                    topRight: Radius.circular(2.0),
-                                    bottomLeft: Radius.circular(2.0),
-                                    bottomRight:
-                                    Radius.circular(20.0))),
-                            child: Center(
-                                child: customText(
-                                    "Verify OTP",
-                                    20,
-                                    AppColors.primaryColor,
-                                    FontWeight.normal)),
-                          )
+                const SizedBox(height: 5,),
+                Container(
+                  height: 40,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    border: Border.all(color: AppColors.text2Color),
+                    borderRadius: BorderRadius.circular(20),),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 15, right: 15,),
+                    child: TextField(
+                      controller: _otpController,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: "Enter OTP",
+                        suffixIcon: TextButton(
+                            onPressed: () {
+                              if(_formKey.currentState!.validate()){
+                                _userController.adduser(_nameController.text, _emailController.text, _numberController.text, _addressController.text,_passwordController.text);
+                              }
+                              if(otpVerify(_emailController.text,_otpController.text)){
+                                _userController.otp=true;
+                                Get.snackbar(
+                                    "Your Email verified", "Successfully");
+                              }
+                              else{
+                                Get.snackbar(
+                                    "Wrong OTP", "Enter Correct OTP");
+                              }
+                            },
+                            child:
+                            Container(
+                              height: 25,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                  color: AppColors.text2Color,
+                                  borderRadius:  BorderRadius.circular(30)),
+                              child: Center(
+                                  child: customText(
+                                      "Verify",
+                                      20,
+                                      AppColors.primaryColor,
+                                      FontWeight.normal)),
+                            )
+                        ),
                       ),
                     ),
                   ),
@@ -183,16 +238,10 @@ class _CreateAccountState extends State<CreateAccount> {
                       }
                     },
                     child: Container(
-                      height: 30,
-                      width: 300,
+                      height: 40,
                       decoration: BoxDecoration(
                           color: AppColors.text2Color,
-                          borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(20.0),
-                              topRight: Radius.circular(2.0),
-                              bottomLeft: Radius.circular(2.0),
-                              bottomRight:
-                              Radius.circular(20.0))),
+                          borderRadius:  BorderRadius.circular(50)),
                       child: Center(
                           child: customText(
                               "Create Account",
@@ -201,6 +250,7 @@ class _CreateAccountState extends State<CreateAccount> {
                               FontWeight.normal)),
                     ),
                   ),
+                const SizedBox(height: 5,),
               ],
             ),
           ),

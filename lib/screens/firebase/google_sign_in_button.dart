@@ -22,14 +22,14 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 16.0),
+      padding: const EdgeInsets.only(bottom: 1.0),
       child: _isSigningIn
           ? const CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
             )
           : OutlinedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.white),
+                backgroundColor: MaterialStateProperty.all(Colors.blueGrey),
                 shape: MaterialStateProperty.all(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40),
@@ -72,7 +72,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                           child: Text('Verify Google Account',
                               style: TextStyle(
                                 fontSize: 20,
-                                color: Colors.black54,
+                                color: Colors.white,
                                 fontWeight: FontWeight.w600,
                               )))
                     ],
